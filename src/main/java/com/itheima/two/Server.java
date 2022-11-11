@@ -1,4 +1,4 @@
-package com.itheima.one;
+package com.itheima.two;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -23,8 +23,8 @@ public class Server {
             //把字节输入流包装成一个缓冲字符输入流
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
             String msg;
-            if ((msg= bufferedReader.readLine()) != null){
-                System.out.print("服务端接收到：" + msg);
+            while ((msg= bufferedReader.readLine()) != null){
+                System.out.println("服务端接收到：" + msg);
             }
         } catch (IOException e) {
             e.printStackTrace();
