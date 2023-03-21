@@ -23,8 +23,8 @@ public class Server {
             //把输入流包装成缓冲字符输入流
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
             String message;
-            while ((message=bufferedReader.readLine()) != null) {
-                System.out.println("服务器接收到："+ message);
+            while ((message = bufferedReader.readLine()) != null) {
+                System.out.println("服务器接收到：" + message);
             }
         } catch (IOException e) {
             e.printStackTrace();

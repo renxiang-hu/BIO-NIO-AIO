@@ -23,7 +23,7 @@ public class Server {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
             String msg;
             while ((msg = bufferedReader.readLine()) != null) {
-                System.out.println("服务端接收到："+ msg);
+                System.out.println("服务端接收到：" + msg);
             }
         } catch (IOException e) {
             e.printStackTrace();

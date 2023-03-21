@@ -15,7 +15,7 @@ public class Server {
             InputStream inputStream = accept.getInputStream();
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
             String msg;
-            while ((msg = bufferedReader.readLine()) != null){
+            while ((msg = bufferedReader.readLine()) != null) {
                 System.out.println("服务端接收到的信息：" + msg);
             }
         } catch (IOException e) {

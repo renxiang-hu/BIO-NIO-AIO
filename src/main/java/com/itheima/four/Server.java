@@ -8,7 +8,7 @@ public class Server {
     public static void main(String[] args) {
         try {
             ServerSocket serverSocket = new ServerSocket(9999);
-            HandlerSocketServerPool pool = new HandlerSocketServerPool(3,10);
+            HandlerSocketServerPool pool = new HandlerSocketServerPool(3, 10);
             while (true) {
                 Socket accept = serverSocket.accept();
                 ServerRunnableTarget serverRunnableTarget = new ServerRunnableTarget(accept);
