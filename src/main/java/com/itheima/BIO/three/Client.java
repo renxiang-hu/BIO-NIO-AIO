@@ -1,4 +1,4 @@
-package com.itheima.four;
+package com.itheima.BIO.three;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -18,5 +18,6 @@ public class Client {
             printStream.println(s);
             printStream.flush();
         }
+
     }
 }

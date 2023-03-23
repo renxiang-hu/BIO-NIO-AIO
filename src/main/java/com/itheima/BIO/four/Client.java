@@ -1,4 +1,4 @@
-package com.itheima.test;
+package com.itheima.BIO.four;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class Client {
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket("127.0.0.1", 9999);
-        //输入流：读     输出流：写
         OutputStream outputStream = socket.getOutputStream();
         PrintStream printStream = new PrintStream(outputStream);
         Scanner scanner = new Scanner(System.in);
@@ -17,6 +16,7 @@ public class Client {
             System.out.print("请说：");
             String s = scanner.nextLine();
             printStream.println(s);
+            printStream.flush();
         }
     }
 }

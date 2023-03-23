@@ -1,4 +1,4 @@
-package com.itheima.three;
+package com.itheima.BIO.three;
 
 import java.io.BufferedReader;
 import java.io.IOException;

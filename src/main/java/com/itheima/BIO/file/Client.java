@@ -1,4 +1,4 @@
-package com.itheima.file;
+package com.itheima.BIO.file;
 
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
